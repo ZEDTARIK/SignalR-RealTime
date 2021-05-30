@@ -1,0 +1,25 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+                <span>Your Name</span> <br />
+                <input type="text" id="txtUser"  /> <br />
+                <textarea rows="10" cols="40" id="txtMessage"></textarea>
+                <button class="btn btn-primary" id="btnSnend">Send Msg</button>
+        </div>
+        <div class="col-md-6">
+            <label>List Messsages : </label>
+            <ul id="list" class="alert alert-info">
+
+            </ul>
+        </div>
+    </div>
+</div>
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script src="~/lib/aspnet/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/site.js"></script>
